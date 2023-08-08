@@ -1,0 +1,28 @@
+"""
+This Python code can be used to access the model deployed in AWS EC2 Instance and make predictions.
+"""
+
+import json
+import requests
+#Public URL for the web server
+url = "http://ec2-16-171-47-137.eu-north-1.compute.amazonaws.com:8080/predict"
+
+input_data= {"gender": "Male",
+             "age": 60,
+             "hypertension": True,
+             "heart": True,
+             "work": "Private Job",
+             "glucose": 250,
+             "bmi": 60}
+
+#Convert the Python List into a json string.
+input_json = json.dumps(input_data)
+
+#Send the POST request to the web server to get the prediction
+response = requests.post(url,input_json)
+
+#Print the response
+print("Response Status:",response)
+
+#Print the prediction text
+print("Response Text:",response.text)
