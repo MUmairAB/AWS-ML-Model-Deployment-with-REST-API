@@ -1,0 +1,9 @@
+sudo yum update --> to upgrade the installed packages to the latest version
+sudo yum install python3-pip --> to install the pip3
+
+cd Model_files --> move to the folder containing the Python script and other supporting files
+
+ls -lrt --> list all the files
+
+pip3 install -r requirements.txt --> install the libraries specified in the file
+python3 'Stroke Prediction APP.py' --> run the Python file
