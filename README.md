@@ -24,10 +24,10 @@ The process begins by training a machine learning model tailored to your problem
 The trained model can be used for inference by developing a FastAPI for the model. This script allows you to receive input data, pass it through the trained model, and receive predictions. The inference script is stored as [Stroke Prediction APP.py](https://github.com/MUmairAB/AWS-ML-Model-Deplyment-with-REST-API/blob/main/Stroke%20Prediction%20APP.py).
 
 #### 3.3 Setting Up AWS EC2 Instance:
-Follow the instructions provided in my article published in Towards DataScience on Medium. This instance will serve as a remote web server for hosting the FastAPI application.
+Follow the instructions provided in my [article](https://medium.com/p/3009b90eadfa) published in **Level Up Coding** on **Medium**. This instance will serve as a remote web server for hosting the FastAPI application.
 
 #### 3.4 Deploying FastAPI on EC2:
-Once the EC2 instance is set up, transfer the requirements.txt, Stroke Prediction APP.py, and trained_model.sav files to the web server using instructions provided in the same article. Then, run the Python script on the EC2 instance to make the model accessible through the internet by running the following commands provided in [CLI Commands.txt](https://github.com/MUmairAB/AWS-ML-Model-Deplyment-with-REST-API/blob/main/CLI%20Commands.txt)
+Once the EC2 instance is set up, transfer the requirements.txt, Stroke Prediction APP.py, and trained_model.sav files to the web server using instructions provided in the same [article](https://medium.com/p/3009b90eadfa). Then, run the Python script on the EC2 instance to make the model accessible through the internet by running the following commands provided in [CLI Commands.txt](https://github.com/MUmairAB/AWS-ML-Model-Deplyment-with-REST-API/blob/main/CLI%20Commands.txt)
 
 ```
 sudo yum update --> to upgrade the installed packages to the latest version
